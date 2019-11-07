@@ -191,6 +191,7 @@ kubectl run formio-files-core \
     --env "FORMIO_PDF_APIKEY=FIXME" \
     --env "FORMIO_S3_SERVER=minio" \
     --env "FORMIO_S3_PORT=9000" \
+    --env "FORMIO_S3_REGION=FIXME" \
     --env "FORMIO_S3_BUCKET=formio" \
     --env "FORMIO_S3_KEY=$storage" \
     --env "FORMIO_S3_SECRET=$(az storage account keys list -g $rg -n $storage --query [0].value -o tsv)" \
